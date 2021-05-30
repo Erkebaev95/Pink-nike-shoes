@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Nike Shoe Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+        <section>
+            <header>
+                <a href="#" class="logo"><img src="img/logo.png"></a>
+                <div class="toggle" onclick="toggleMenu()"></div>
+                <ul class="navigation">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">What's New</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </header>
+            <div class="content">
+                <div class="imgBx">
+                    <img src="img/shoe.png">
+                </div>
+                <div class="text">
+                    <h2>Nike Air Zoom</h2>
+                    <p>Speed. Responsiveness. Control. You'll experience them all with Nike Zoom,
+                        our innovative and explosive cushioning system designed for speed and agility.</p>
+                    <a href="https://www.nike.com/">Details</a>
+                </div>
+            </div>
+            <ul class="sci">
+                <li><a href="https://www.facebook.com/nike"><img src="img/facebook.png"></a></li>
+                <li><a href="https://twitter.com/Nike"><img src="img/twitter.png"></a></li>
+                <li><a href="https://www.instagram.com/nike/"><img src="img/instagram.png"></a></li>
+            </ul>
+            <script>
+                function toggleMenu() {
+                const menuToggle = document.querySelector('.toggle');
+                const navigation = document.querySelector('.navigation');
+                menuToggle.classList.toggle('active')
+                navigation.classList.toggle('active')
+                }
+            </script>
+        </section>
+    </body>
+</html>
